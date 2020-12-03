@@ -58,7 +58,9 @@ public class DataAdapterFavourite extends RecyclerView.Adapter<DataAdapterFavour
     @Override
     public void onBindViewHolder(final DatakuViewHolder holder, final int position) {
         holder.txtNama.setText(dataList.get(position).getTeam());
+        holder.txtNpm.setText(dataList.get(position).getCountry());
         holder.txtNpm.setText(dataList.get(position).getSport());
+
         Log.d("makananku", "onBindViewHolder: "+dataList.get(position).getTeamBadge());
         //pakai glide karena untuk nampilkan data gambar dari URL / permission / graddle
         Glide.with(holder.itemView)

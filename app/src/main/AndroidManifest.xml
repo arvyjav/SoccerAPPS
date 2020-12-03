@@ -18,7 +18,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".DetailFavourite"></activity>
-        <activity android:name=".ListDataFavourite"></activity>
+        <activity android:name=".ListDataFavourite"/>
         <activity android:name=".DetailSoccer" />
         <activity android:name=".ListData" />
         <activity android:name=".ControlClass">
