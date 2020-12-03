@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/shinto"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WELCOME PLEASE LOGIN"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:hint="username"
+        android:id="@+id/txtusername"
+        android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginEnd="20dp"
+        android:textColorHint="#797979"
+    app:backgroundTint="#797979" />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="20dp"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:textColorHint="#797979"
+    app:backgroundTint="#797979" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+       android:layout_marginStart="20dp"
+       android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
+    android:text="LOGIN"
+    android:textColor="#FFFFFF" />
+
+</LinearLayout>
