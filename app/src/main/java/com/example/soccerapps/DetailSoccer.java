@@ -34,6 +34,7 @@ public class DetailSoccer extends AppCompatActivity {
     String id;
     String yir;
 
+
     TextView tvjudul;
     ImageView ivposter;
     TextView tvdesc;
@@ -96,6 +97,12 @@ public class DetailSoccer extends AppCompatActivity {
                 movieModel.setTeam(title);
                 movieModel.setTeamBadge(path);
                 movieModel.setFormedYear(yir);
+                movieModel.setWebsite( web );
+                movieModel.setFacebook( facebook );
+                movieModel.setTwitter( twitter );
+                movieModel.setInstagram( instagram );
+                
+
 
                 realmHelper = new RealmHelper(realm);
                 realmHelper.save(movieModel);

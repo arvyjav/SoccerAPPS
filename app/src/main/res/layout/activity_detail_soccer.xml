@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#71D8D5"
     tools:context=".DetailSoccer">
 
 
@@ -89,12 +90,13 @@
         android:layout_height="wrap_content"/>
 
 
-    <Button
-        android:id="@+id/btnbookmark"
-        android:layout_marginTop="60dp"
-        android:layout_gravity="center"
-        android:text="Fav Ball Club"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnbookmark"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/custom_button"
+            android:text="Fav Ball Club" />
     </LinearLayout>
 </ScrollView>

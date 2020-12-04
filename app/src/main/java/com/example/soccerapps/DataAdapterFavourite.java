@@ -58,8 +58,9 @@ public class DataAdapterFavourite extends RecyclerView.Adapter<DataAdapterFavour
     @Override
     public void onBindViewHolder(final DatakuViewHolder holder, final int position) {
         holder.txtNama.setText(dataList.get(position).getTeam());
-        holder.txtNpm.setText(dataList.get(position).getCountry());
-        holder.txtNpm.setText(dataList.get(position).getSport());
+        holder.txtnegara.setText( dataList.get( position ).getCountry() );
+        holder.txtNpm.setText(dataList.get(position).getFormedYear());
+
 
         Log.d("makananku", "onBindViewHolder: "+dataList.get(position).getTeamBadge());
         //pakai glide karena untuk nampilkan data gambar dari URL / permission / graddle
@@ -78,7 +79,7 @@ public class DataAdapterFavourite extends RecyclerView.Adapter<DataAdapterFavour
     }
 
     public class DatakuViewHolder extends RecyclerView.ViewHolder implements View.OnCreateContextMenuListener{
-        private TextView txtNama, txtNpm;
+        private TextView txtNama, txtNpm, txtnegara;
         CardView card;
         ImageView ivprofile;
 
@@ -87,6 +88,7 @@ public class DataAdapterFavourite extends RecyclerView.Adapter<DataAdapterFavour
             viewku=itemView;
             card = (CardView) itemView.findViewById(R.id.cardku);
             ivprofile = (ImageView) itemView.findViewById(R.id.ivprofile);
+            txtnegara = (TextView) itemView.findViewById( R.id.txtcountry );
             txtNama = (TextView) itemView.findViewById(R.id.tvname);
             txtNpm = (TextView) itemView.findViewById(R.id.tvdesc);
             itemView.setOnCreateContextMenuListener(this);
